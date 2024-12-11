@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 const allTraining = require('./routes/allTrainings/allTraining');
-app.use('/allTraining', allTraining);
+app.use('/', allTraining);
 
 app.listen(port, () => {
     console.log("Le serveur est en ligne sur le port", port);
